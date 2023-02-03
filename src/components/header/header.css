@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: 2%;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding:0px;
+}
+
+.header ul li {
+    padding-left: 60px;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.header img {
+    width: 22%;
+}
+
+.header a {
+    text-decoration: none;
+    color: #FF6060;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+/*ADAPTATION HEADER - ECRAN TABLETTE (& TEL)*/
+@media all and (max-width: 992px)
+{
+    .header ul li {
+        padding-left: 20px;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}
