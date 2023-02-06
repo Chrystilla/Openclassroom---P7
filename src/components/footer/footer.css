@@ -18,7 +18,7 @@
     font-size: 24px;
 }
 
-/*ADAPTATION HEADER - ECRAN TABLETTE (& TEL)*/
+/*ADAPTATION FOOTER - ECRAN TABLETTE (& TEL)*/
 @media all and (max-width: 992px)
 {
     .footer p {
