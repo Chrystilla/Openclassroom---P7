@@ -1,6 +1,6 @@
 import React from 'react';
 import '../gallery/gallery.css'
-import apiData from '../../api/apiData'
+import apiData from '../../data/apiData'
 import Card from '../card/Card';
 
 const Gallery = () => {

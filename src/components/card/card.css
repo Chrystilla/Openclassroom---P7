@@ -4,6 +4,7 @@
     height: 340px;
     position: relative;
     margin: 2% 0%;
+    cursor: pointer;
 }
 
 .card img {
