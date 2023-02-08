@@ -1,0 +1,28 @@
+
+.slideshow {
+    height : 415px;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2%;
+}
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: -40%;
+    margin: 2%;
+    height: 50px;
+    cursor: pointer;
+    
+}
+
+
+.slide_count {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    bottom: -75%;
+}
