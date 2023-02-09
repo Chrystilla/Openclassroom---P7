@@ -3,7 +3,7 @@ import '../collapse/collapse.css'
 import arrow from '../../assets/arrow.png'
 import { useState } from 'react';
 
-const Collapse = ({id, title, text}) => {
+const Collapse = ({title, text}) => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (

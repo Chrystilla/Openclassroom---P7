@@ -1,9 +1,10 @@
 
 .slideshow {
+    
     height : 415px;
     border-radius: 25px;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin: 2%;
 }
 

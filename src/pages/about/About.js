@@ -15,10 +15,7 @@ const About = () => {
                 {aboutData.map((data) => {
                     return (
                         <div key={data.id} className='about_collapse'>
-                            <Collapse
-                                title={data.title}
-                                text={data.text}
-                            />
+                            <Collapse title={data.title} text={data.text}/>
                         </div>
                     )
                 })}
