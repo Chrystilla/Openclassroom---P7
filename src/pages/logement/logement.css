@@ -1,7 +1,7 @@
 .logement_header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin: 2%;
 }
 
@@ -44,22 +44,27 @@
 .host_profil {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    align-items: flex-end;
 }
 
 .host_name_picture {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    text-align: right;
 }
 
 .host_name {
     color: #FF6060;
     font-weight: 500;
     font-size: 18px;
+    margin-right: 3%;
+    line-height: 30px;
 }
 
 .host_picture {
     border-radius: 100%;
+    width: 64px;
+    height: 64px;
 }
 
 .logement_collapse {

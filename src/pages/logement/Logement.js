@@ -6,6 +6,7 @@ import '../logement/logement.css'
 import apiData from '../../data/apiData'
 import Slideshow from '../../components/slideshow/Slideshow';
 import Collapse from '../../components/collapse/Collapse';
+import Rating from '../../components/rating/Rating';
 
 
 const Logement = () => {
@@ -42,7 +43,7 @@ const Logement = () => {
                         <p className='host_name'>{dataCurrentLogement.host.name}</p>
                         <img src={dataCurrentLogement.host.picture} className='host_picture' alt='host profilpic'/>
                     </div>
-                    <p className='host_rating'>{dataCurrentLogement.rating}</p>
+                    <Rating hostRate={dataCurrentLogement.rating}/>
                 </div>
             </section>
 
