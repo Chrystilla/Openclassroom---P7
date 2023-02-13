@@ -1,29 +1,38 @@
 
 .slideshow {
-    
     height : 415px;
     border-radius: 25px;
     background-size: cover;
     background-position: center;
-    margin: 2%;
+    margin: 4%;
 }
 
 .arrow {
     display: flex;
     justify-content: space-between;
     position: relative;
-    bottom: -40%;
-    margin: 2%;
-    height: 50px;
+    bottom: -45%;
+    margin: 4%;
+    height: 70Px;
     cursor: pointer;
-    
 }
-
 
 .slide_count {
     color: #FFFFFF;
     font-size: 18px;
     text-align: center;
     position: relative;
-    bottom: -75%;
+    bottom: -65%;
+}
+
+/*ADAPTATION HEADER - ECRAN TABLETTE (& TEL)*/
+@media all and (max-width: 992px)
+{
+    .slideshow{
+        height : 255px;
+    }
+    
+    .arrow {
+        height: 30px;
+    }
 }

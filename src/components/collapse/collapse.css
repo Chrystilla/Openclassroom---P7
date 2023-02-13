@@ -9,7 +9,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0% 2%;
     width:80%;
     height:40px;
     background-color: #FF6060;
@@ -21,10 +20,13 @@
 .collapse_header h3 {
     font-size: 24px;
     font-weight: 500;
+    margin: 0;
+    padding-left: 2%;
 }
 
 .arrow-down {
     width: 19px;
+    padding-left : 2%;
     transform: rotate(180deg);
     transition: transform 0.3s ease-in-out;
   }
@@ -32,26 +34,36 @@
 .arrow-up {
     width: 19px;
     transform: rotate(0deg);
+    padding-right: 2%;
     transition: transform 0.3s ease-in-out;
   }
 
 .collapse_content {
     width:80%;
     background-color: #F6F6F6;
-    padding: 0% 2%;
 }
 
 .collapse_content p {
     font-weight: 400;
+    padding: 2%;
     color:#FF6060;
     font-size: 24px;
-    
-
 }
 
 /*ADAPTATION BANNER - ECRAN TABLETTE & TEL*/
 @media all and (max-width: 768px)
 {
+    .collapse {
+        margin: 25px 4%;
+    }
+    .collapse_header {
+        width: 100%;
+    }
+
+    .collapse_content {
+        width:100%;
+    }
+    
     .collapse_header h3 {
         font-size: 12px;
     }
