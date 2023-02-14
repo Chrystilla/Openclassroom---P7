@@ -12,6 +12,7 @@ const About = () => {
         <div className='about'>
             <Banner banner={banner}/>
             <main>
+                {/* On itère le contenu de aboutData avec .map() */}
                 {aboutData.map((data) => {
                     return (
                         <div key={data.id} className='about_collapse'>

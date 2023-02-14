@@ -11,13 +11,16 @@ const Router = () => {
     return (
         <div>
             <Routes>
+                {/* On applique le Layout sur toutes les Routes */}
                 <Route element={<Layout/>}>
+                    {/* Création d'une Route par path */}
                     <Route index element={<Home/>}/>
 
 	                <Route path="/home" element={<Home/>}/>
 	                <Route path="/about" element={<About/>}/>
 	                <Route path="/logement/:idLogement" element={<Logement/>}/>
                     <Route path="/error" element={<Error/>}/>
+
 	                {/*Path="*" fonctionne si l'URL ne correspond à rien de déclaré ci-dessus*/}
 	                <Route path="*" element={<Error/>}/>
                 </Route>

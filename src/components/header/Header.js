@@ -9,6 +9,7 @@ const Header = () => {
             <img src={logo} alt='kasa logo' className='logo' />
             <nav>
                 <ul>
+                    {/* Création des Link de navigation */}
                     <li><Link to="/home">Accueil</Link></li>
                     <li><Link to="/about">A Propos</Link></li>
                 </ul>

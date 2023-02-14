@@ -11,7 +11,7 @@ import Rating from '../../components/rating/Rating';
 
 const Logement = () => {
     const [imageSlider, setImageSlider] = useState([]);
-    //On récupère le parametre ID de l'URL de la page
+    //On récupère le parametre ID de l'URL de la page avec le Hook useParams()
     const {idLogement} = useParams();
     //Recherche de l'id ciblé dans le tableau des logements
     const dataCurrentLogement = apiData.find(data => data.id === idLogement);
@@ -41,6 +41,7 @@ const Logement = () => {
                         <h2 className='logement_title'>{dataCurrentLogement.title}</h2>
                         <p className='logement_location'>{dataCurrentLogement.location}</p>
                         <div className='logement_tags'>
+                            {/* On itère les tags de chaque logement avec .map() */}
                             {dataCurrentLogement.tags.map((tags, index) => {
                             return (<p key={index}>{tags}</p>)
                             })}
