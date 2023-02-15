@@ -6,13 +6,16 @@ import Card from '../card/Card';
 const Gallery = () => {
     return (
         <main className="gallery">
-            {apiData.map((data) => {
+            {/* Iteration du contenu d'apiData */}
+            {apiData.map((logement) => {
+                
+                {/*Sous le format défini dans le composant Card*/}
                 return (
                     <Card
-                        key={data.id}
-                        id={data.id}
-                        title={data.title}
-                        cover={data.cover}
+                        key={logement.id}
+                        id={logement.id}
+                        title={logement.title}
+                        cover={logement.cover}
                     />
                 )
             })}

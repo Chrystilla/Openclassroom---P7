@@ -6,36 +6,37 @@
     margin: 4%;
 }
 
-.header ul {
+.header img {
+    width: 22%;
+}
+
+.nav_list {
     display: flex;
     justify-content: space-between;
     list-style: none;
     padding:0px;
 }
 
-.header ul li {
+.nav_list li {
     padding-left: 60px;
     font-size: 24px;
     text-transform: capitalize;
 }
 
-.header img {
-    width: 22%;
-}
-
-.header a {
+.nav_list_item {
     text-decoration: none;
     color: #FF6060;
 }
 
-.header a:hover {
+.nav_list_active {
     text-decoration: underline;
+    color: #FF6060;
 }
 
 /*ADAPTATION HEADER - ECRAN TABLETTE (& TEL)*/
 @media all and (max-width: 992px)
 {
-    .header ul li {
+    .nav_list li {
         padding-left: 20px;
         font-size: 12px;
         text-transform: uppercase;

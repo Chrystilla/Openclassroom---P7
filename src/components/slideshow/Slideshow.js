@@ -6,7 +6,7 @@ import arrow_forward from '../../assets/arrow_forward.png'
 
 const Slideshow = ({imageSlider}) => {
 
-    //On fixe l'index de la page sur laquelle nous sommes
+    //On fixe l'index de la slide sur laquelle nous sommes
     const[currentIndex, setCurrentIndex] = useState(0)
 
     const goToPrevSlide = () => {

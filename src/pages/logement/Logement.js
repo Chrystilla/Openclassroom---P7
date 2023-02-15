@@ -10,11 +10,12 @@ import Rating from '../../components/rating/Rating';
 
 
 const Logement = () => {
-    const [imageSlider, setImageSlider] = useState([]);
     //On récupère le parametre ID de l'URL de la page avec le Hook useParams()
     const {idLogement} = useParams();
-    //Recherche de l'id ciblé dans le tableau des logements
+    //Recherche du logement ciblé grâce à l'id dans le tableau des logements
     const dataCurrentLogement = apiData.find(data => data.id === idLogement);
+
+    const [imageSlider, setImageSlider] = useState([]);
 
 	useEffect(() => {
         //Si l'id ciblé existe dans le tableau des logements
